@@ -1,4 +1,4 @@
-import { fontWeight, fonts, mediaQueries } from "./base";
+import { fontWeight, fonts, mediaQueries, transition } from "./base";
 import { colors } from "./colors";
 
 export const theme = {
@@ -6,4 +6,5 @@ export const theme = {
   colors,
   fontWeight,
   fonts,
+  transition,
 };

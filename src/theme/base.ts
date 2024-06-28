@@ -26,3 +26,7 @@ export const fontWeight = {
 } as const;
 
 export const fonts = { spaceMono: "'Space Mono', Arial, serif", kaushan: "'Kaushan Script', cursive" } as const;
+
+export const transition = {
+  default: "0.5s",
+};
