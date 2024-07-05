@@ -1,4 +1,4 @@
-export const siteWidth = 1680; //px
+export const siteWidth = 1680;
 
 export const breakpointMap = {
   mobileS: 320,
@@ -10,6 +10,15 @@ export const breakpointMap = {
 } as const;
 
 export const breakpointsArray = Object.values(breakpointMap).map(item => `${item}px`);
+
+export const breakpoints = Object.assign(breakpointsArray, {
+  mobileS: breakpointsArray[0],
+  mobileM: breakpointsArray[1],
+  mobileL: breakpointsArray[2],
+  tablet: breakpointsArray[3],
+  laptop: breakpointsArray[4],
+  laptopL: breakpointsArray[5],
+});
 
 export const mediaQueries = {
   mobileS: `@media screen and (min-width: ${breakpointsArray[0]})`,
@@ -30,3 +39,4 @@ export const fonts = { spaceMono: "'Space Mono', Arial, serif", kaushan: "'Kaush
 export const transition = {
   default: "0.5s",
 };
+

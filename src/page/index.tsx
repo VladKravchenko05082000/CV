@@ -1,7 +1,19 @@
-import { StyledMainPage } from "./styled";
+import { Header } from "./components";
+import { StyledMainPage, StyledOverlay } from "./styled";
+
+import { useGetHeaderMobileSize } from "hooks";
 
 const MainPage: React.FC = () => {
-  return <StyledMainPage>MainPage</StyledMainPage>;
+  const { headerHeight } = useGetHeaderMobileSize();
+  return (
+    <>
+      <StyledOverlay headerHeight={headerHeight} />
+
+      <StyledMainPage>
+        <Header />
+      </StyledMainPage>
+    </>
+  );
 };
 
 export default MainPage;

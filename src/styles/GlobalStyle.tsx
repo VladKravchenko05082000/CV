@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { theme } from "theme";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -28,13 +27,13 @@ html, body, div, span, applet, object, iframe,
     display: block;
   }
   body {
-    font-family: ${theme.fonts.spaceMono};
+    font-family:${({ theme }) => theme.fonts.spaceMono};
     font-size: 16px;
     line-height: 1.5;
     overflow-x: hidden;
     overflow-y: scroll !important;
     overscroll-behavior-y: none ;
-    background-color: ${theme.colors.white};
+    background-color:${({ theme }) => theme.colors.white};
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;

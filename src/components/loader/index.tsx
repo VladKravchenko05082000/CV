@@ -1,6 +1,6 @@
 import { Triangle } from "react-loader-spinner";
 
-import useMatchBreakpoints from "hooks/use-match-breakpoints";
+import { useMatchBreakpoints } from "hooks";
 
 import { theme } from "theme";
 
