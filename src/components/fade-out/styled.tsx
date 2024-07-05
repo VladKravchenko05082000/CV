@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "theme";
 
 export const StyledFadeOut = styled.div<{ isLoad: boolean }>`
   position: fixed;
@@ -11,9 +10,9 @@ export const StyledFadeOut = styled.div<{ isLoad: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${theme.colors.white};
+  background: ${({ theme }) => theme.colors.white};
   opacity: ${({ isLoad }) => (isLoad ? 0 : 1)};
-  -webkit-transition: ${theme.transition.default};
-  -o-transition: ${theme.transition.default};
-  transition: ${theme.transition.default};
+  -webkit-transition: ${({ theme }) => theme.transition.default};
+  -o-transition: ${({ theme }) => theme.transition.default};
+  transition: ${({ theme }) => theme.transition.default};
 `;
