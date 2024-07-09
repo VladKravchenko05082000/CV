@@ -1,4 +1,7 @@
-export const siteWidth = 1680;
+export const siteWidth = {
+  desktop: 1440,
+  mobile: 720,
+};
 
 export const breakpointMap = {
   mobileS: 320,
@@ -38,5 +41,5 @@ export const fonts = { spaceMono: "'Space Mono', Arial, serif", kaushan: "'Kaush
 
 export const transition = {
   default: "0.5s",
+  cubic_bezier_0_3s: "all .3s cubic-bezier(.2,1,.8,1)",
 };
-

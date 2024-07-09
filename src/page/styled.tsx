@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMainPage = styled.div`
-  max-width: ${({ theme }) => `${theme.siteWidth}px`};
+  max-width: ${({ theme }) => `${theme.siteWidth.mobile}px`};
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
@@ -9,6 +9,9 @@ export const StyledMainPage = styled.div`
   height: 100%;
   padding: 0 16px;
   z-index: 1;
+  ${({ theme }) => theme.mediaQueries.laptop} {
+    max-width: ${({ theme }) => `${theme.siteWidth.desktop}px`};
+  }
 `;
 
 export const StyledOverlay = styled.div<{ headerHeight: number }>`
@@ -19,7 +22,7 @@ export const StyledOverlay = styled.div<{ headerHeight: number }>`
   left: 0;
   background-color: ${({ theme }) => theme.colors.primary};
 
-  ${({ theme }) => theme.mediaQueries.tablet} {
+  ${({ theme }) => theme.mediaQueries.laptop} {
     height: 100vh;
   }
 `;

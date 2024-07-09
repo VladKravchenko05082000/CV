@@ -41,9 +41,10 @@ html, body, div, span, applet, object, iframe,
   
   ol,
   ul {
-    list-style: disc;
+    list-style: none;
     list-style-position: inside;
   }
+
   blockquote,
   q {
     quotes: none;

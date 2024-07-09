@@ -14,10 +14,9 @@ const Header: React.FC = () => {
           width={{ _: "250px", laptopL: "16.67vw" }}
           height={{ _: "250px", laptopL: "16.67vw" }}
           variant="circle"
-          pb="30px"
         />
 
-        <StyledHeaderMainHeading textScale="h1" as="h1" pb="30px">
+        <StyledHeaderMainHeading textScale="h1" as="h1" pt="30px" pb="30px">
           <span>Kravchenko Vlad</span>
         </StyledHeaderMainHeading>
 

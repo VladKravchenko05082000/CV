@@ -13,10 +13,34 @@ export const styles = {
       font-size: 50px;
     }
   `,
+  [scales.h2]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: 40px;
+    line-height: 1.5;
+  `,
   [scales.h3]: css`
     font-family: ${({ theme }) => theme.fonts.spaceMono};
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 16px;
     line-height: 1.1;
+  `,
+  [scales.p30Regular]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: 30px;
+    line-height: 1.1;
+  `,
+  [scales.p16Regular]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: 16px;
+    line-height: 1.7;
+  `,
+  [scales.p16Bold]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    font-size: 16px;
+    line-height: 1.7;
   `,
 };
