@@ -1,6 +1,6 @@
 import { useMatchBreakpoints } from "hooks";
 
-import { Box, FlexGap, Flex, Text } from "components";
+import { Box, FlexGap, Flex, Text, Title } from "components";
 import { StyledAboutMeContainer, StyledAboutMePersonalInfoContainer, StyledSocialLinkContainer } from "./styled";
 
 import { ABOUT_ME_PERSONAL_INFO_LIST } from "./constants";
@@ -17,11 +17,9 @@ const AboutMe: React.FC = () => {
       transition={isMobile ? { duration: 0.5, delay: 1 } : { duration: 0.5 }}
       viewport={{ once: true, amount: 0.8 }}
     >
-      <Text textAlign="center" color="dark" textScale="h2" as="h2" mb={{ _: "60px", laptop: "80px" }}>
-        About Me
-      </Text>
+      <Title text="About Me" />
 
-      <FlexGap gap={isDesktop ? "80px" : "60px"} flexDirection={{ _: "column", laptop: "row" }}>
+      <FlexGap gap={isDesktop ? "80px" : "40px"} flexDirection={{ _: "column", laptop: "row" }}>
         <Box width={{ _: "100%", laptop: "34%" }}>
           <FlexGap rowGap="20px" flexDirection="column">
             {ABOUT_ME_PERSONAL_INFO_LIST.map(({ title, text, href }, index) => (

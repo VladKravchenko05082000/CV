@@ -1,5 +1,4 @@
-import { Box } from "components";
-import { AboutMe, Header } from "./components";
+import { AboutMe, Header, MyResume } from "./components";
 import { StyledMainPage, StyledOverlay } from "./styled";
 
 import { useGetHeaderMobileSize } from "hooks";
@@ -16,7 +15,7 @@ const MainPage: React.FC = () => {
 
         <AboutMe />
 
-        <Box minHeight="100vh"></Box>
+        <MyResume />
       </StyledMainPage>
     </>
   );

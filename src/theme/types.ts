@@ -1,4 +1,4 @@
-import { mediaQueries, breakpoints, fontWeight, fonts, transition, siteWidth } from "./base";
+import { mediaQueries, breakpoints, fontWeight, fonts, transition } from "./base";
 import { colors } from "./colors";
 
 export type MediaQueries = typeof mediaQueries;
@@ -13,10 +13,8 @@ export type Fonts = typeof fonts;
 
 export type Transition = typeof transition;
 
-export type SiteWidth = typeof siteWidth;
-
 export interface CustomTheme {
-  siteWidth: SiteWidth;
+  siteWidth: number;
   breakpoints: Breakpoints;
   mediaQueries: MediaQueries;
   fontWeight: FontWeight;

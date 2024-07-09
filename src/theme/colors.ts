@@ -6,4 +6,6 @@ export const colors = {
   lightGray: "#00000080",
   darkLight: "#4d4d4d",
   darkBlue: "#2F3C4F",
+  workExperience: "#e6e6e6",
+  timePeriod: "#bfbfbf",
 } as const;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMainPage = styled.div`
-  max-width: ${({ theme }) => `${theme.siteWidth.mobile}px`};
+  max-width: ${({ theme }) => `${theme.siteWidth}px`};
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
@@ -9,9 +9,6 @@ export const StyledMainPage = styled.div`
   height: 100%;
   padding: 0 16px;
   z-index: 1;
-  ${({ theme }) => theme.mediaQueries.laptop} {
-    max-width: ${({ theme }) => `${theme.siteWidth.desktop}px`};
-  }
 `;
 
 export const StyledOverlay = styled.div<{ headerHeight: number }>`
