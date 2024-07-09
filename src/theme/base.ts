@@ -1,7 +1,4 @@
-export const siteWidth = {
-  desktop: 1440,
-  mobile: 720,
-};
+export const siteWidth = 1140;
 
 export const breakpointMap = {
   mobileS: 320,

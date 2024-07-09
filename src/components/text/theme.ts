@@ -22,13 +22,19 @@ export const styles = {
   [scales.h3]: css`
     font-family: ${({ theme }) => theme.fonts.spaceMono};
     font-weight: ${({ theme }) => theme.fontWeight.regular};
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.1;
   `,
   [scales.p30Regular]: css`
     font-family: ${({ theme }) => theme.fonts.spaceMono};
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 30px;
+    line-height: 1.1;
+  `,
+  [scales.p24Regular]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: 24px;
     line-height: 1.1;
   `,
   [scales.p16Regular]: css`
