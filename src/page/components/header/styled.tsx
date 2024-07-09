@@ -12,7 +12,7 @@ const getSideLineStyles = () => {
     width: 20px;
     height: 3px;
 
-    ${({ theme }) => theme.mediaQueries.tablet} {
+    ${({ theme }) => theme.mediaQueries.laptop} {
       top: 40px;
       width: 30px;
       height: 4px;
@@ -27,7 +27,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   padding: 40px 0px;
 
-  ${({ theme }) => theme.mediaQueries.tablet} {
+  ${({ theme }) => theme.mediaQueries.laptop} {
     height: 100vh;
   }
 `;
@@ -45,7 +45,7 @@ export const StyledHeaderMainHeading = styled(Text)`
       margin-left: -15px;
       ${getSideLineStyles()};
 
-      ${({ theme }) => theme.mediaQueries.tablet} {
+      ${({ theme }) => theme.mediaQueries.laptop} {
         margin-left: -30px;
       }
     }
@@ -56,7 +56,7 @@ export const StyledHeaderMainHeading = styled(Text)`
       margin-right: -15px;
       ${getSideLineStyles()};
 
-      ${({ theme }) => theme.mediaQueries.tablet} {
+      ${({ theme }) => theme.mediaQueries.laptop} {
         margin-right: -30px;
       }
     }
