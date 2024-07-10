@@ -1,17 +1,17 @@
-import { Box, Flex, Text, Title } from "components";
+import { Box, Container, Flex, Text, Title } from "components";
 import {
-  StyledMyResumeContainer,
   StyledWorkExperienceItem,
   StyledWorkExperienceItemContainer,
   StyledWorkExperienceListContainer,
   StyledWorkExperienceTitleContainer,
 } from "./styled";
-import { WORK_EXPERIENCE_LIST } from "./contants";
 import { WorkExperienceIcon } from "components/svg";
+
+import { WORK_EXPERIENCE_LIST } from "./contants";
 
 const MyResume: React.FC = () => {
   return (
-    <StyledMyResumeContainer>
+    <Container>
       <Title text="My Resume" />
 
       <StyledWorkExperienceListContainer>
@@ -74,7 +74,7 @@ const MyResume: React.FC = () => {
           );
         })}
       </StyledWorkExperienceListContainer>
-    </StyledMyResumeContainer>
+    </Container>
   );
 };
 
