@@ -49,4 +49,16 @@ export const styles = {
     font-size: 16px;
     line-height: 1.7;
   `,
+  [scales.p14Bold]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    font-size: 14px;
+    line-height: 1.2;
+  `,
+  [scales.p14Regular]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: 14px;
+    line-height: 1.2;
+  `,
 };

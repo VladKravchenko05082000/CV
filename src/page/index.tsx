@@ -1,4 +1,4 @@
-import { AboutMe, Header, MyResume, MyServices } from "./components";
+import { AboutMe, Header, MyResume, MyServices, MySkills } from "./components";
 import { StyledMainPage, StyledOverlay } from "./styled";
 
 import { useGetHeaderMobileSize } from "hooks";
@@ -18,6 +18,8 @@ const MainPage: React.FC = () => {
         <MyResume />
 
         <MyServices />
+
+        <MySkills />
       </StyledMainPage>
     </>
   );
