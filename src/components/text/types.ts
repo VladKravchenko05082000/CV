@@ -15,6 +15,10 @@ export const scales = {
   p24Regular: "p24Regular",
   p16Regular: "p16Regular",
   p16Bold: "p16Bold",
+  p14Regular: "p14Regular",
+  p14Bold: "p14Bold",
+  p12Regular: "p12Regular",
+  p12Bold: "p12Bold",
 };
 
 export type Scales = (typeof scales)[keyof typeof scales];
