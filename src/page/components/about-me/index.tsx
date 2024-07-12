@@ -1,22 +1,16 @@
 import { useMatchBreakpoints } from "hooks";
 
-import { Box, FlexGap, Flex, Text, Title } from "components";
-import { StyledAboutMeContainer, StyledAboutMePersonalInfoContainer, StyledSocialLinkContainer } from "./styled";
+import { Box, FlexGap, Flex, Text, Title,  AnimatedContainer } from "components";
+import { StyledAboutMePersonalInfoContainer, StyledSocialLinkContainer } from "./styled";
 
 import { ABOUT_ME_PERSONAL_INFO_LIST } from "./constants";
 import { SOCIAL_MEDIA_LIST } from "constants/social-media";
 
 const AboutMe: React.FC = () => {
-  const { isDesktop, isMobile } = useMatchBreakpoints();
+  const { isDesktop } = useMatchBreakpoints();
 
   return (
-    <StyledAboutMeContainer
-      initial={{ opacity: 0, y: 50 }}
-      animate={isMobile ? { opacity: 1, y: 0 } : undefined}
-      whileInView={!isMobile ? { opacity: 1, y: 0 } : undefined}
-      transition={isMobile ? { duration: 0.5, delay: 1 } : { duration: 0.5 }}
-      viewport={{ once: true, amount: 0.8 }}
-    >
+    <AnimatedContainer>
       <Title text="About Me" />
 
       <FlexGap gap={isDesktop ? "80px" : "40px"} flexDirection={{ _: "column", laptop: "row" }}>
@@ -67,7 +61,7 @@ const AboutMe: React.FC = () => {
           </FlexGap>
         </Box>
       </FlexGap>
-    </StyledAboutMeContainer>
+    </AnimatedContainer>
   );
 };
 
