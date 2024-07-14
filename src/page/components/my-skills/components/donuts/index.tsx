@@ -27,17 +27,18 @@ const MySkillsDonuts: React.FC = () => {
         {isLoad &&
           isInView &&
           donutsMySkillsList.map((item, index) => {
+            const { title, value } = item[0];
             return (
               <Column position="relative" key={index} alignItems="center" justifyContent="center">
                 <StyledPieChart data={item} lineWidth={5} animate animationDuration={1500} />
 
                 <Column alignItems="center" position="absolute">
                   <Text textScale={!isMobile ? "p16Bold" : "p14Bold"} color="darkLight">
-                    {item[0].title}
+                    {title}
                   </Text>
 
                   <Text textScale={!isMobile ? "p16Regular" : "p14Regular"} color="lightGray">
-                    {item[0].value}%
+                    {value}%
                   </Text>
                 </Column>
               </Column>
