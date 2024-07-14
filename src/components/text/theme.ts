@@ -37,6 +37,18 @@ export const styles = {
     font-size: 24px;
     line-height: 1.1;
   `,
+  [scales.p24Bold]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    font-size: 24px;
+    line-height: 1.1;
+  `,
+  [scales.p20Regular]: css`
+    font-family: ${({ theme }) => theme.fonts.spaceMono};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: 20px;
+    line-height: 1.1;
+  `,
   [scales.p16Regular]: css`
     font-family: ${({ theme }) => theme.fonts.spaceMono};
     font-weight: ${({ theme }) => theme.fontWeight.regular};

@@ -13,6 +13,8 @@ export const scales = {
   h3: "h3",
   p30Regular: "p30Regular",
   p24Regular: "p24Regular",
+  p24Bold: "p24Bold",
+  p20Regular: "p20Regular",
   p16Regular: "p16Regular",
   p16Bold: "p16Bold",
   p14Regular: "p14Regular",
