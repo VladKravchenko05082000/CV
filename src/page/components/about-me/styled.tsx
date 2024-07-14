@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const StyledAboutMePersonalInfoContainer = styled.div`
@@ -46,12 +45,9 @@ export const StyledSocialLinkContainer = styled.a`
   border-radius: 2px;
   padding: 10px 10px 2px 10px;
   background-color: ${({ theme }) => theme.colors.darkBlue};
-`;
+  transition: ${({ theme }) => theme.transition.default};
 
-export const StyledAboutMeContainer = styled(motion.div)`
-  padding: 48px 0;
-
-  ${({ theme }) => theme.mediaQueries.laptop} {
-    padding: 112px 0;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 `;

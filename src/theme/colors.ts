@@ -1,4 +1,5 @@
 export const colors = {
+  transparent: "transparent",
   white: "#fff",
   dark: "#000",
   primary: "#FF9000",
@@ -8,4 +9,15 @@ export const colors = {
   darkBlue: "#2F3C4F",
   workExperience: "#e6e6e6",
   timePeriod: "#bfbfbf",
+  myServicesWhiteTextColor: "#ffffffb3",
+  mySkills: {
+    html: "#f16529",
+    css: "#2965f1",
+    react: "#087ea4",
+    angular: "#dd0031",
+    typeScript: "#3178c6",
+    redux: "#7847bd",
+    web3: "#000",
+    styledComponents: "#47704c",
+  },
 } as const;

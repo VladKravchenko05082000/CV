@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledMyResumeContainer = styled.div`
-  padding: 48px 0;
-
-  ${({ theme }) => theme.mediaQueries.laptop} {
-    padding: 112px 0;
-  }
-`;
-
 export const StyledWorkExperienceListContainer = styled.ul`
   padding-top: 20px;
   position: relative;

@@ -4,3 +4,6 @@ export { default as LinkedInIcon } from "./icons/LinkedInIcon";
 export { default as GithubIcon } from "./icons/GithubIcon";
 export { default as GmailIcon } from "./icons/GmailIcon";
 export { default as WorkExperienceIcon } from "./icons/WorkExperienceIcon";
+export { default as ReactJSIcon } from "./icons/ReactJsIcon";
+export { default as CryptoExpertiseIcon } from "./icons/CryptoExpertiseIcon";
+export { default as AnalyticsIcon } from "./icons/AnalyticsIcon";
