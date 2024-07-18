@@ -1,13 +1,15 @@
 import { ThemeProvider } from "styled-components";
 
+import { useGetIsLoadForFadeOut, useScrollToTop } from "hooks";
+
 import MainPage from "page";
 import { FadeOut } from "components";
 import { GlobalStyle } from "styles";
 
 import { theme } from "theme";
-import { useGetIsLoadForFadeOut } from "hooks";
 
 const App: React.FC = () => {
+  useScrollToTop();
   const { isLoad } = useGetIsLoadForFadeOut();
 
   return (

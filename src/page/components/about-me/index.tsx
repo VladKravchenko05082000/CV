@@ -1,6 +1,6 @@
 import { useMatchBreakpoints } from "hooks";
 
-import { Box, FlexGap, Flex, Text, Title,  AnimatedContainer } from "components";
+import { Box, FlexGap, Flex, Text, Title, AnimatedContainer } from "components";
 import { StyledAboutMePersonalInfoContainer, StyledSocialLinkContainer } from "./styled";
 
 import { ABOUT_ME_PERSONAL_INFO_LIST } from "./constants";
@@ -48,8 +48,11 @@ const AboutMe: React.FC = () => {
           </Text>
 
           <Text textScale="p16Regular" color="darkLight" pb="20px">
-            There live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts.
-            Separated they live in bookmarksgrove there live the blind texts far from the countries.
+            Hello! My name is Vlad, and I am 23 years old. I have been engaged in front-end development for 3 years,
+            with 2.5 years of commercial development experience. I specialize in creating modern and user-friendly web
+            applications using React. Over the past 2.5 years, I have gained substantial experience in developing
+            blockchain applications and possess deep knowledge in this field. I am also interested in gaining experience
+            in other areas of development and am open to new opportunities.
           </Text>
 
           <FlexGap gap="20px">
