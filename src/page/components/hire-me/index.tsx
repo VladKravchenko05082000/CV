@@ -10,8 +10,9 @@ const HireMe: React.FC = () => {
         </Text>
 
         <Text textAlign="center" textScale="p16Regular" color="white" maxWidth="780px" margin="0 auto" pb="30px">
-          Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci
-          architecto culpa amet.
+          Ready to work and interested in new projects and challenges! I look forward to the opportunity to contribute
+          to your team. Please contact me to discuss collaboration opportunities and learn more about my experience and
+          skills.
         </Text>
 
         <Flex justifyContent="center" width="100%">

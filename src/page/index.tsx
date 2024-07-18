@@ -1,10 +1,10 @@
 import { AboutMe, Header, HireMe, MyResume, MyServices, MySkills, MyWorks } from "./components";
 import { StyledMainPage, StyledOverlay } from "./styled";
 
-import { useGetHeaderMobileSize, useScrollToTop } from "hooks";
+import { useGetHeaderMobileSize } from "hooks";
 
 const MainPage: React.FC = () => {
-  useScrollToTop();
+  
   const { headerHeight } = useGetHeaderMobileSize();
 
   return (
