@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <StyledHeader id={ELEMENTS_ID.header}>
       <Column alignItems="center">
         <Image
-          src="/images/main-photo.webp"
+          src="images/main-photo.webp"
           alt="main-photo"
           width={{ _: "250px", laptopL: "16.67vw" }}
           height={{ _: "250px", laptopL: "16.67vw" }}
