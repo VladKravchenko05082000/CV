@@ -28,9 +28,11 @@ const MyWorks: React.FC = () => {
                     ></StyledMyWorksItemContainer>
 
                     <Box mt="10px">
-                      <Text textScale="p24Bold" as="h3" color="dark" textAlign="center" mb="10px">
-                        {title}
-                      </Text>
+                      <a target="_blank" rel="noreferrer noopener" href={href}>
+                        <Text textScale="p24Bold" as="h3" color="dark" textAlign="center" mb="10px">
+                          {title}
+                        </Text>
+                      </a>
 
                       <Text textScale="p20Regular" color="lightGray" textAlign="center">
                         React

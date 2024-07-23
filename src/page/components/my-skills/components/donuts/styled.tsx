@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledPieChart = styled(PieChart)`
   transform: rotate(245deg);
-  width: 150px;
+  width: 175px;
 
   ${({ theme }) => theme.mediaQueries.tablet} {
     width: 200px;
