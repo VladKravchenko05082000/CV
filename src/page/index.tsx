@@ -1,10 +1,9 @@
-import { AboutMe, Header, HireMe, MyResume, MyServices, MySkills, MyWorks } from "./components";
+import { AboutMe, Header, HireMe, MyResume, MyServices, MySkills } from "./components";
 import { StyledMainPage, StyledOverlay } from "./styled";
 
 import { useGetHeaderMobileSize } from "hooks";
 
 const MainPage: React.FC = () => {
-  
   const { headerHeight } = useGetHeaderMobileSize();
 
   return (
@@ -21,8 +20,6 @@ const MainPage: React.FC = () => {
         <MyServices />
 
         <MySkills />
-
-        <MyWorks />
 
         <HireMe />
       </StyledMainPage>
