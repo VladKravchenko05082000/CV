@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         </StyledHeaderMainHeading>
 
         <Text textScale="h3" as="h3" pb="30px">
-          React/Angular Developer
+          React/React Native Developer
         </Text>
 
         <FlexGap gap="20px">
