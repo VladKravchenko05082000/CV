@@ -14,8 +14,12 @@ export const MY_SKILLS_LIST: { title: string; value: number; color: string }[][]
     { title: "ReactTwo", value: 5, color: theme.colors.workExperience },
   ],
   [
-    { title: "Angular", value: 70, color: theme.colors.mySkills.angular },
-    { title: "AngularTwo", value: 30, color: theme.colors.workExperience },
+    { title: "Next.js", value: 95, color: theme.colors.mySkills.nextJs },
+    { title: "NextTwo", value: 5, color: theme.colors.workExperience },
+  ],
+  [
+    { title: "Vue", value: 70, color: theme.colors.mySkills.vue },
+    { title: "VueTwo", value: 30, color: theme.colors.workExperience },
   ],
   [
     { title: "TypeScript", value: 90, color: theme.colors.mySkills.typeScript },

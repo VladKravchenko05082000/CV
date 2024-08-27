@@ -14,10 +14,11 @@ export const colors = {
     html: "#f16529",
     css: "#2965f1",
     react: "#087ea4",
-    angular: "#dd0031",
+    vue: "#41b883",
     typeScript: "#3178c6",
     redux: "#7847bd",
     web3: "#000",
     styledComponents: "#47704c",
+    nextJs: "#000000",
   },
 } as const;
